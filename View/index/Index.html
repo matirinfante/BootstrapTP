@@ -1,25 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-</head>
+<html>
+<header>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</header>
+
 <body class="d-flex flex-column min-vh-100">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Catplay</a>
-        <button
-                class="navbar-toggler"
-                type="button"
-                data-mdb-toggle="collapse"
-                data-mdb-target="#navbarText"
-                aria-controls="navbarText"
-                aria-expanded="false"
-                aria-label="Toggle navigation"
-        >
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarText">
@@ -35,32 +27,117 @@
                 </li>
             </ul>
             <span class="navbar-text">
-        Navbar text with an inline element
-      </span>
+                    Navbar text with an inline element
+                </span>
         </div>
     </div>
 </nav>
-<div>
-    <header>
-        <div class="container border rounded-2 border-2 mt-2">
-            <div class="row text-center">
-                <div class="h1 p-3">Esto será un header para la página de ropa de gatitos</div>
+<div class="container-fluid">
+    <div class="row bg-warning">
+        <div class="col-*">Encabezado</div>
+    </div>
+    <div class="row bg-success">
+        <div class="col-lg-12">COL</div>
+    </div>
+    <div class="row bg-info">
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+        <div class="col">IMG</div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist"
+                 aria-orientation="vertical">
+                <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="collapse"
+                        data-bs-target=".multi1" type="button" role="tab"
+                        aria-controls="n1 hola1"
+                        aria-selected="true">Img 1
+                </button>
+                <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="collapse"
+                        data-bs-target=".multi2" type="button" role="tab"
+                        aria-controls="n2 hola2" aria-selected="false">Img 2
+                </button>
             </div>
         </div>
-    </header>
+        <div class="col-sm-8">
+            <div class="tab-content" id="tab2">
+                <div class="collapse multi1 show active" id="n1" role="tabpanel"
+                     aria-labelledby="n1">1
+                </div>
+                <div class="collapse multi2" id="n2" role="tabpanel"
+                     aria-labelledby="n2">2
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-8 bg-secondary">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                </tr>
+                <tr>
+                    <th scope="row">3</th>
+                    <td colspan="2">Larry the Bird</td>
+                    <td>@twitter</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-sm-4 bg-primary">
+            <div class="tab-content" id="tab">
+                <div class="collapse fade multi1 show active" id="hola1" role="tabpanel"
+                     aria-labelledby="hola1">1
+                </div>
+                <div class="collapse fade multi2" id="hola2" role="tabpanel"
+                     aria-labelledby="hola2">2
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
-<div class="container">
-    <hr>
-</div>
+
 
 <footer class="mt-auto">
     <div class="container-fluid bg-dark">
-        <div class="row"><p class="text-white">copyright</p>
+        <div class="row text-center">
+            <p class="text-white">Copyright</p>
         </div>
     </div>
 </footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+</body>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 </body>
+
 </html>
