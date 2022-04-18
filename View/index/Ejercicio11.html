@@ -5,9 +5,33 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <style type="text/css">
+        .nav-link {
+            color: black;
+        }
+
+        .nav-link.active > .img-thumbnail {
+            background-color: orange;
+            border-radius: 10px;
+        }
+
+        .nav-link > .img-thumbnail:hover {
+            transform: scale(1.1);
+            transition: transform .3s;
+        }
+
+        .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+            background-color: orange;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #e99702 !important;
+        }
+    </style>
 </header>
 
-<body class="d-flex flex-column min-vh-100">
+<body class="d-flex flex-column min-vh-100" style="background-color: rgba(190,187,187,0.25)">
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
         <a class="navbar-brand" href="../../index.html"><img src="../img/catplay.png" height="40"></a>
@@ -22,21 +46,22 @@
                 </li>
                 <li class="nav-item">
                     <div class="dropdown">
-                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                          Ejercicios
+                        <a class="nav-link dropdown-toggle" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                           aria-expanded="false">
+                            Ejercicios
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                          <li><a class="dropdown-item" href="Ejercicio1.html">Ejercicio 1</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio2.html">Ejercicio 2</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio3.html">Ejercicio 3</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio4.html">Ejercicio 4</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio5.html">Ejercicio 5</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio6.html">Ejercicio 6</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio7.html">Ejercicio 7</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio8.html">Ejercicio 8</a></li>
-                          <li><a class="dropdown-item" href="Ejercicio9.html">Ejercicio 9</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio1.html">Ejercicio 1</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio2.html">Ejercicio 2</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio3.html">Ejercicio 3</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio4.html">Ejercicio 4</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio5.html">Ejercicio 5</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio6.html">Ejercicio 6</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio7.html">Ejercicio 7</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio8.html">Ejercicio 8</a></li>
+                            <li><a class="dropdown-item" href="Ejercicio9.html">Ejercicio 9</a></li>
                         </ul>
-                      </div>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Showcase</a>
@@ -56,49 +81,62 @@
         </div>
     </div>
     <!-- COL-LG-12 -->
-    <div class="row mb-4" >
+    <div class="row mb-4 border shadow mt-4" style="background-color: white">
         <div class="col-lg-12"><h2>Lo mejor en moda gatuna...</h2></div>
         <div class="col-12 w-100" style="background-image:url(../img/fondo3.jpg); height: 70px;"></div>
         <div class="col text-end"><h3>...para todo el año</h3></div>
     </div>
     <!-- COL DE THUMBNAIL -->
     <div class="row mb-2 mt-2">
-        <ul class="nav">
+        <ul class="nav thumb">
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#elemento-1"><img class="img-thumbnail" src="../img/11a.jpg" alt=""></a>
+                <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#elemento-1"><img class="img-thumbnail"
+                                                                                                  src="../img/11a.jpg"
+                                                                                                  alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-2"><img class="img-thumbnail" src="../img/11b.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-2"><img class="img-thumbnail"
+                                                                                           src="../img/11b.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-3"><img class="img-thumbnail" src="../img/11c.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-3"><img class="img-thumbnail"
+                                                                                           src="../img/11c.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-4"><img class="img-thumbnail" src="../img/11d.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-4"><img class="img-thumbnail"
+                                                                                           src="../img/11d.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-5"><img class="img-thumbnail" src="../img/11e.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-5"><img class="img-thumbnail"
+                                                                                           src="../img/11e.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-6"><img class="img-thumbnail" src="../img/11f.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-6"><img class="img-thumbnail"
+                                                                                           src="../img/11f.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-7"><img class="img-thumbnail" src="../img/11g.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-7"><img class="img-thumbnail"
+                                                                                           src="../img/11g.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-8"><img class="img-thumbnail" src="../img/11h.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-8"><img class="img-thumbnail"
+                                                                                           src="../img/11h.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-9"><img class="img-thumbnail" src="../img/11i.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-9"><img class="img-thumbnail"
+                                                                                           src="../img/11i.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-10"><img class="img-thumbnail" src="../img/11j.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-10"><img class="img-thumbnail"
+                                                                                            src="../img/11j.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-11"><img class="img-thumbnail" src="../img/11k.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-11"><img class="img-thumbnail"
+                                                                                            src="../img/11k.jpg" alt=""></a>
             </li>
             <li class="col-lg-1 col-md-2 col-sm-3 col-4 nav-item">
-                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-12"><img class="img-thumbnail" src="../img/11l.jpg" alt=""></a>
+                <a class="nav-link" data-bs-toggle="tab" data-bs-target="#elemento-12"><img class="img-thumbnail"
+                                                                                            src="../img/11l.jpg" alt=""></a>
             </li>
         </ul>
     </div>
@@ -177,7 +215,7 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">Autumn Miau</p>
-                    Hermoso conjunto de boina y saco/capa de otoño para michis con estilo. 
+                    Hermoso conjunto de boina y saco/capa de otoño para michis con estilo.
                     De telas calidas y suave, en colores terra. <br>
                     Tu gato disfrutara de esta estación abrigadito y luciendo genial!.
                 </div>
@@ -257,9 +295,9 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">Super Miau</p>
-                    ¿Es un ave? ¿Es un avión? <br> 
+                    ¿Es un ave? ¿Es un avión? <br>
                     No! Es Super Miua que viene a alegrar nuestros dias con su ternura! <br>
-                    Tu michi estara listo para luchar por la justicia en cualquier lugar con este gran disfraz. 
+                    Tu michi estara listo para luchar por la justicia en cualquier lugar con este gran disfraz.
                 </div>
             </div>
         </div>
@@ -417,7 +455,7 @@
                     <p class="text-decoration-underline">PrrNfluencer</p>
                     Divino juego de anteojos y collar, para los consentidos de la casa. <br>
                     Los accesorios perfectos para ganar millones de seguidores! <br>
-                    Imposible resistirse! 
+                    Imposible resistirse!
                 </div>
             </div>
         </div>
@@ -496,7 +534,7 @@
                     <p class="text-decoration-underline">NekoDeku</p>
                     Peculiarmente adorable!<br>
                     Con este genial cosplay completo con enterito, accesorios y peluca, tu michi sera el número 1! <br>
-                    Prrrr Ultra! 
+                    Prrrr Ultra!
                 </div>
             </div>
         </div>
@@ -731,8 +769,8 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">ACatSuki</p>
-                        Abrigadita capa de buzo perfecta para los dias frios. <br>
-                        Para que tu michi se sienta todo un gran y poderoso ninja renegado.
+                    Abrigadita capa de buzo perfecta para los dias frios. <br>
+                    Para que tu michi se sienta todo un gran y poderoso ninja renegado.
                 </div>
             </div>
         </div>
@@ -809,9 +847,9 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">La flotación</p>
-                        Aterrador y adorable la perfecta convinación para este malefico michi. <br>
-                        Conjuntito completo, con accesorios y globo incluido! <br>
-                        ¿Estará Bill a salvo de tanta ternura cuando este michi haga la flotación? <br>
+                    Aterrador y adorable la perfecta convinación para este malefico michi. <br>
+                    Conjuntito completo, con accesorios y globo incluido! <br>
+                    ¿Estará Bill a salvo de tanta ternura cuando este michi haga la flotación? <br>
 
                 </div>
             </div>
@@ -889,8 +927,8 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">Hamburgueso</p>
-                        La remera perfecta para toda ocación. <br>
-                        Muchos colores y estampados para el día a día de tu Hamburgueso preferido!
+                    La remera perfecta para toda ocación. <br>
+                    Muchos colores y estampados para el día a día de tu Hamburgueso preferido!
                 </div>
             </div>
         </div>
@@ -967,8 +1005,8 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">CatOru Gojo</p>
-                        El exorsista más tierno del mundo llego a tu vida con este gran cosplay! <br>
-                        Enterito y peluca para que el Chamiau más fuerte salve tu día de los espiritus malvados! 
+                    El hechicero más tierno del mundo llego a tu vida con este gran cosplay! <br>
+                    Enterito y peluca para que el Chamiau más fuerte salve tu día de los espíritus malvados!
                 </div>
             </div>
         </div>
@@ -1045,30 +1083,34 @@
                 <!-- Parrafo -->
                 <div class="col-sm-4 col-md-12 col-lg-12 col-xl-4">
                     <p class="text-decoration-underline">Miaurry Christmas</p>
-                        Para pasar la más linda de las noches buenas.<br>
-                        Calentita pero liviana perfecta para esas noches de fiestas. <br>
-                        Capita con capucha, 100% navideña!                         
+                    Para pasar la más linda de las noches buenas.<br>
+                    Calentita pero liviana perfecta para esas noches de fiestas. <br>
+                    Capita con capucha, 100% navideña!
                 </div>
             </div>
         </div>
         <div class="row">
             <div id="tablet" class="border border-2 col p-3 d-block d-sm-none d-md-none d-lg-none d-xl-none">
-                <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-up-circle" viewBox="0 0 16 16" style="color:rgb(4, 187, 187)">
-                    <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
-                  </svg></a>
+                <a href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="25" fill="currentColor" class="bi bi-arrow-up-circle"
+                         viewBox="0 0 16 16" style="color:rgb(4, 187, 187)">
+                        <path fill-rule="evenodd"
+                              d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+                    </svg>
+                </a>
             </div>
         </div>
     </div>
 </div>
 
-<footer class="mt-auto bg-danger bg-gradient">
+<footer class="mt-auto bg-gradient">
     <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-        <li class="nav-item"><a href="https://github.com/Lucia-Landaeta" class="nav-link px-2 text-white">Lucia
+        <li class="nav-item"><a href="https://github.com/Lucia-Landaeta" class="nav-link px-2">Lucia
             Landaeta</a></li>
-        <li class="nav-item"><a href="https://github.com/matirinfante" class="nav-link px-2 text-white">Matias
+        <li class="nav-item"><a href="https://github.com/matirinfante" class="nav-link px-2">Matias
             Infante</a></li>
     </ul>
-    <p class="text-center text-white-50">© 2022 Catplay - Grupo Rojo PWA</p>
+    <p class="text-center text-black-50">© 2022 Catplay - Grupo Rojo PWA</p>
 </footer>
 
 
