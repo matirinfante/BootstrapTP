@@ -1,8 +1,8 @@
 # BootstrapTP
 Minor project for 2022 Advanced web programming at Facultad de Informática - UNCo
 
-![Catplay](/View/img/catplay.png#gh-dark-mode-only)
-![Catplay](/View/img/catplaydark.png#gh-light-mode-only)
+![Catplay](/View/img/catplay.png#gh-light-mode-only)
+![Catplay](/View/img/catplaydark.png#gh-dark-mode-only)
 
 ## Objective
 - Learn responsive web design with Bootstrap
